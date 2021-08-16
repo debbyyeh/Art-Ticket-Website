@@ -1,61 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap" rel="stylesheet">
+  <!-- material icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <!-- icon -->
+  <link rel="shortcut icon" href="./assets/images/confirmation_number_black_24dp.svg" type="image/x-icon">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+<body>
+  <div class="header">
+    <header>
+      <div class="container-fluid border border-dark">
+        <div class="container d-flex justify-content-end align-items-center">
+          <h1 class="text-primary mx-auto">EXHIBINECTION</h1>
+          <div class="sign_link">
+            <ul class="desktop-show d-flex">
+              <li><a href="" class="text-dark">Sign in</a>
+              </li>
+              <li class="ms-5"><a href="" class="text-dark">Sign up</a>
+              </li>
+              <li class="ms-5"><a href=""><span class="material-icons text-black">
+                    confirmation_number
+                  </span></a>
+              </li>
+            </ul>
+            <a href="" class="cart-mobile sm-show"><span class="material-icons text-black">
+                confirmation_number
+              </span></a>
+          </div>
         </div>
       </div>
-    </nav>
+    </header>
+  </div>
+  <%- contents %>
+    <div class="footer">
+      <footer class="footer-fluid d-flex align-items-end">
+        <div class="container subscribe">
+          <h2>想收到最新消息嗎？ <br>快訂閱我們！</h2>
+          <div class="d-flex">
+            <input type="email" name="email" id="email" placeholder="輸入您的電子信箱" class="rounded-start">
+            <a class="btn btn-secondary rounded-end" href="#" role="button">訂閱</a>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-nav">
+        <div class="container d-flex align-items-center justify-content-between">
+          <div class="footer-left">
+            <ul class="d-flex align-items-center">
+              <li class="me-3 logo"><a href="index.html" class="text-black">EXHIBINECTION</a></li>
+              <li>© 2020. All Rights Reserved.</li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <ul class="d-flex">
+              <li class="me-4 text-dark"><a href="">Sign in</a></li>
+              <li class="text-dark"><a href="">Sign up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <%- contents %>
-
-    <footer class="footer">
-      footer
-    </footer>
 
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
+</body>
 
 </html>

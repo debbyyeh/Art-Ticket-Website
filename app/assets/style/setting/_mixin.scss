@@ -1,0 +1,21 @@
+@mixin smallDesk {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+@mixin pad {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin BigMobile {
+    @media (max-width: 567px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 414px) {
+        @content;
+    }
+}

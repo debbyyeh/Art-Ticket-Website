@@ -1,0 +1,36 @@
+body {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    a {
+        text-decoration: none;
+        display: inline-block;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: bold;
+    }
+    input[type="button"],
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+    }
+    .row {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
