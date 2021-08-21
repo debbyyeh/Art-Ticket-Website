@@ -14,11 +14,7 @@ body {
         max-width: 100%;
         height: auto;
         display: block;
-    }
-    h2 {
-        font-size: 32px;
-        line-height: 48px;
-        font-weight: bold;
+        object-fit: cover;
     }
     input[type="button"],
     input[type="text"],

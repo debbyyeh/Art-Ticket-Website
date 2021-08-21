@@ -10,10 +10,10 @@
 }
 @mixin layout {
     margin-bottom: 60px;
-    @include pad() {
+    @include Ipad() {
         margin-bottom: 40px;
     }
-    @include BigMobile() {
+    @include X-mobile() {
         margin-bottom: 24px;
     }
     @include mobile() {

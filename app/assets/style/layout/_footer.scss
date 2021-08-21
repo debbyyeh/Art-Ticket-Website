@@ -1,38 +1,11 @@
 .footer {
-    .footer-fluid {
-        background-image: url(../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 400px;
-        color: $white;
-    }
-    h2 {
-        margin-bottom: 12px;
-    }
-    input {
-        padding-left: 12px;
-    }
     .subscribe {
         padding-bottom: 36px;
         a {
             padding: 12px 52px;
-            margin-left: -1px;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-    }
-    .footer-nav {
-        padding: 28px 0px;
-    }
-    .footer-left {
-        .logo {
-            font-size: 24px;
-        }
-    }
-    .footer-right {
-        a {
-            line-height: 21px;
+            @include mobile {
+                padding: 12px 24px;
+            }
         }
     }
 }

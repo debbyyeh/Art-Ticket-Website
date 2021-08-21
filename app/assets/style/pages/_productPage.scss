@@ -1,0 +1,97 @@
+.productPage {
+    .product_layout {
+        padding-top: 80px;
+        padding-bottom: 52px;
+        @include Ipad {
+            padding-top: 60px;
+        }
+        @include X-mobile {
+            padding-top: 44px;
+            padding-bottom: 44px;
+        }
+    }
+    .menu_list {
+        li {
+            padding: 14px 18px;
+        }
+        a {
+            border-bottom: 2px solid transparent;
+            &:hover {
+                border-bottom: 2px solid $secondary;
+            }
+        }
+    }
+    .product_content {
+        h2 {
+            @include word(36px, 54px);
+            @include Ipad() {
+                @include word(30px, 48px);
+                margin-bottom: 1rem;
+            }
+            @include X-mobile() {
+                margin-bottom: 0.5rem;
+            }
+            @include mobile() {
+                @include word(28px, 42px);
+            }
+        }
+    }
+    .product_content {
+        @include Ipad {
+            width: 48%;
+        }
+        @include X-mobile {
+            width: 100%;
+        }
+    }
+    .product_pic {
+        overflow: hidden;
+        img {
+            transition: all 0.2s;
+            &:hover {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+        }
+        @include Ipad {
+            width: 48%;
+        }
+        @include X-mobile {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+    .product_date {
+        @include word(20px, 30px);
+        @include Ipad() {
+            display: none;
+        }
+    }
+    .product_date_Ipad {
+        display: none;
+        @include Ipad() {
+            display: block;
+        }
+        @include mobile() {
+            @include word(16px, 24px);
+        }
+    }
+    .product_info {
+        @include Ipad() {
+            justify-content: center;
+            align-items: center;
+        }
+        @include X-mobile() {
+            flex-direction: column;
+            flex-direction: column-reverse;
+        }
+    }
+    .row-reverse {
+        display: none;
+    }
+    .find_more {
+        h3 {
+            @include word(32px, 48px);
+        }
+    }
+}
