@@ -22,7 +22,7 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
   <!-- swiper -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- icon -->
   <link rel="shortcut icon" href="./assets/images/confirmation_number_black_24dp.svg" type="image/x-icon">
   <!-- css -->
@@ -60,10 +60,11 @@
   
 <div class="index">
     <div class="container-fluid">
-        <div class="banner d-flex align-items-center">
-            <div class="container main_exhibition ">
+        <div class="banner bg-img h-480 d-flex align-items-center"
+            style="background-image: url(./assets/images/index_banner.jpg)">
+            <div class="container main_exhibition text-white">
                 <h2 class="fs-2 mb-2 lh-xl fw-bold">台北當代藝術展</h2>
-                <p class="fw-bold mb-3">01 JUN - 31 OCT</p>
+                <p class="subtitle fw-bold mb-3">01 JUN - 31 OCT</p>
                 <div class="d-flex">
                     <a class="btn btn-secondary me-2" href="ticket.html" role="button">購買票券</a>
                     <a class="btn btn-outline-white" href="productPage.html" role="button">詳細資訊</a>
@@ -71,241 +72,237 @@
             </div>
         </div>
     </div>
-    <nav>
-        <div class="border border-dark">
-            <ul class="container menu_list d-flex align-items-center justify-content-center">
-                <li><a href="#" class="text-dark">音樂</a></li>
-                <li><a href="#" class="text-dark">戲劇</a></li>
-                <li><a href="productPage.html" class="text-dark">設計</a></li>
-                <li><a href="#" class="text-dark">藝術</a></li>
-                <li><a href="#" class="text-dark">美食</a></li>
-                <li><a href="#" class="text-dark">旅遊</a></li>
-                <li><a href="#" class="text-dark">電影</a></li>
-                <li><a href="#" class="text-dark">親子</a></li>
-                <li><a href="#" class="text-dark">期間限定</a></li>
+    <nav class="border-bottom border-dark">
+        <div class="container">
+            <ul class="navbar-wrapper justify-content-md-center">
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">音樂</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">戲劇</a></li>
+                <li class="navbar-slide w-20"><a href="productPage.html" class="text-dark">設計</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">藝術</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">美食</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">旅遊</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">電影</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">親子</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">期間限定</a></li>
             </ul>
         </div>
     </nav>
     <section>
-        <div class="recommend container mt-9">
-            <h2 class="fs-2 lh-xl fw-bold mb-4">熱門特展</h2>
-            <div class="recommend-fluid row d-flex">
-                <div class="col-md-4 px-0">
-                    <img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="exhibition-1"
-                        class="h-100 w-100">
-                </div>
-                <div class="col-md-8 px-md-4 py-md-7 pt-1 pb-4 d-flex justify-content-between">
-                    <div class="col-md-10 px-0">
-                        <div class="d-flex align-items-center">
-                            <p class="fw-bold mb-1 me-2">2020 台味設計展</p>
-                            <div class="Ipad-show align-items-center mb-1">
-                                <a href="#" class="text-black"><i class="fab fa-facebook"></i></a>
-                                <p class="date fw-bold">01 JUN | 31 OCT</p>
-                            </div>
-                        </div>
-                        <p class="mb-2">$350</p>
-                        <p class="mb-6">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
-                        </p>
-                        <div>
-                            <a class="btn btn-primary me-2" href="ticket.html" role="button">購買票券</a>
-                            <a class="btn btn-outline-primary" href="#" role="button">收藏展覽</a>
-                        </div>
+        <div class="layout-index container-md">
+            <h2 class="fs-2 lh-xl fw-bold mb-4 px-3 px-md-0">熱門特展</h2>
+            <div class="bg-gray">
+                <div class="row flex-column flex-md-row mb-md-20 mb-3 px-md-0 pt-md-0 px-3 pt-4">
+                    <div class="col-md-4 px-0">
+                        <img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="exhibition-1"
+                            class="h-100 w-100">
                     </div>
-                    <div class="col-1 px-0 flex-column justify-content-between Ipad-none">
-                        <p class="date fw-bold">01 <br> JUN<br> | <br>31<br> OCT</p>
-                        <a href="#" class="text-black"><i class="fab fa-facebook fa-2x"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex recommend-fluid">
-                <div class="col-md-4 px-0">
-                    <img src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="exhibition-2"
-                        class="h-100 w-100">
-                </div>
-                <div class="col-md-8 px-md-4 py-md-7 pt-1 pb-4 d-flex justify-content-between">
-                    <div class="col-md-10 px-0">
-                        <div class="d-flex align-items-center">
-                            <p class="fw-bold mb-1 Ipad-none">No.22 線上設計展</p>
-                            <div class="Ipad-show mb-1">
+                    <div class="col-md-8 px-0 px-md-4 py-md-7 pt-1 pb-4 d-flex justify-content-between">
+                        <div class="col-md-10 px-0">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
                                 <div class="d-flex align-items-center">
-                                    <p class="fw-bold">No.22 線上設計展</p>
-                                    <a href="#" class="text-black"><i class="fab fa-facebook"></i></a>
+                                    <p class="subtitle-md fw-bold me-2">2020 台味設計展</p>
+                                    <a href="#" class="text-black d-lg-none"><i class="fab fa-facebook"></i></a>
                                 </div>
-                                <p class="fw-bold align-self-end">01 JUN | 31 OCT</p>
+                                <p class="fw-bold d-lg-none">01 JUN | 31 OCT</p>
+                            </div>
+                            <p class="mb-2">$350</p>
+                            <p class="mb-6 subtitle">
+                                一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+                            </p>
+                            <div>
+                                <a class="btn btn-primary me-2" href="ticket.html" role="button">購買票券</a>
+                                <a class="btn btn-outline-primary" href="#" role="button">收藏展覽</a>
                             </div>
                         </div>
-                        <p class="mb-2">$350</p>
-                        <p class="mb-6">
-                            這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
-                        </p>
-                        <div>
-                            <a class="btn btn-primary mr-8" href="ticket.html" role="button">購買票券</a>
-                            <a class="btn btn-outline-primary" href="#" role="button">收藏展覽</a>
+                        <div class="col-1 px-0 flex-column justify-content-between d-none d-lg-flex">
+                            <p class="fw-bold">01 <br> JUN<br> | <br>31<br> OCT</p>
+                            <a href="#" class="text-black"><i class="fab fa-facebook fa-2x"></i></a>
                         </div>
-                    </div>
-                    <div class="col-1 px-0 flex-column justify-content-between Ipad-none">
-                        <p class="date fw-bold">01 <br> JUN<br> | <br>31<br> OCT</p>
-                        <a href="#" class="text-black"><i class="fab fa-facebook fa-2x"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex flex-column recommend-fluid flex-md-row">
-                <div class="col-md-4 px-0">
-                    <img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="exhibition-3"
-                        class="h-100 w-100">
-                </div>
-                <div class="col-md-8 px-md-4 py-md-7 pt-1 pb-4 d-flex justify-content-between">
-                    <div class="col-md-10 px-0">
-                        <div class="d-flex align-items-center">
-                            <p class="fw-bold mb-1">高雄設計節</p>
-                            <div class="Ipad-show align-items-center mb-1">
-                                <a href="#" class="text-black"><i class="fab fa-facebook"></i></a>
-                                <p class="date fw-bold">01 JUN | 31 OCT</p>
+            <div class="bg-gray">
+                <div class="row flex-column flex-md-row mb-md-20 mb-3 px-md-0 pt-md-0 px-3 pt-4">
+                    <div class="col-md-4 px-0">
+                        <img src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="exhibition-2"
+                            class="h-100 w-100">
+                    </div>
+                    <div class="col-md-8 px-0 px-md-4 py-md-7 pt-1 pb-4 d-flex justify-content-between">
+                        <div class="col-md-10 px-0">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <div class="d-flex align-items-center">
+                                    <p class="subtitle-md fw-bold me-2">No.22 線上設計展</p>
+                                    <a href="#" class="text-black d-lg-none"><i class="fab fa-facebook"></i></a>
+                                </div>
+                                <p class="fw-bold d-lg-none">01 JUN | 31 OCT</p>
+                            </div>
+                            <p class="mb-2">$350</p>
+                            <p class="mb-6 subtitle">
+                                這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
+                            </p>
+                            <div>
+                                <a class="btn btn-primary mr-8" href="ticket.html" role="button">購買票券</a>
+                                <a class="btn btn-outline-primary" href="#" role="button">收藏展覽</a>
                             </div>
                         </div>
-                        <p class="mb-2">$350</p>
-                        <p class="mb-6">
-                            設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
-                        </p>
-                        <div>
-                            <a class="btn btn-primary mr-8" href="ticket.html" role="button">購買票券</a>
-                            <a class="btn btn-outline-primary" href="#" role="button">收藏展覽</a>
+                        <div class="col-1 px-0 flex-column justify-content-between d-none d-lg-flex">
+                            <p class="fw-bold">01 <br> JUN<br> | <br>31<br> OCT</p>
+                            <a href="#" class="text-black"><i class="fab fa-facebook fa-2x"></i></a>
                         </div>
                     </div>
-                    <div class="col-1 px-0 flex-column justify-content-between Ipad-none">
-                        <p class="date fw-bold">01 <br> JUN<br> | <br>31<br> OCT</p>
-                        <a href="#" class="text-black"><i class="fab fa-facebook fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="bg-gray">
+                <div class="row flex-column flex-md-row mb-md-20 mb-0 px-md-0 pt-md-0 px-3 pt-4">
+                    <div class="col-md-4 px-0">
+                        <img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="exhibition-3"
+                            class="h-100 w-100">
+                    </div>
+                    <div class="col-md-8 px-0 px-md-4 py-md-7 pt-1 pb-4 d-flex justify-content-between">
+                        <div class="col-md-10 px-0">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <div class="d-flex align-items-center">
+                                    <p class="subtitle fw-bold me-2">高雄設計節</p>
+                                    <a href="#" class="text-black d-lg-none"><i class="fab fa-facebook"></i></a>
+                                </div>
+                                <p class="fw-bold d-lg-none">01 JUN | 31 OCT</p>
+                            </div>
+                            <p class="mb-2">$350</p>
+                            <p class="mb-6 subtitle">
+                                設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
+                            </p>
+                            <div>
+                                <a class="btn btn-primary mr-8" href="ticket.html" role="button">購買票券</a>
+                                <a class="btn btn-outline-primary" href="#" role="button">收藏展覽</a>
+                            </div>
+                        </div>
+                        <div class="col-1 px-0 flex-column justify-content-between d-none d-lg-flex">
+                            <p class="fw-bold">01 <br> JUN<br> | <br>31<br> OCT</p>
+                            <a href="#" class="text-black"><i class="fab fa-facebook fa-2x"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="container throwback">
+        <div class="container layout-index">
             <h2 class="fs-2 lh-xl fw-bold mb-4">直播回顧</h2>
-            <div class="throwback_list row">
-                <div class="throwback_content text-white px-4 py-7 col-md-5">
-                    <div class="d-flex align-items-center">
-                        <h3 class="mb-5 fw-bold">開幕對談 |
-                            <span>藝術展演巡禮</span>
+            <div class="row">
+                <div class="bg-img px-0" style="background-image: url(./assets/images/people2.png);">
+                    <div class="throwback-content text-white px-4 py-7 col-md-5 col-12">
+                        <div class="d-flex align-items-center">
+                            <h3 class="mb-5 fw-bold">開幕對談 |
+                                <span>藝術展演巡禮</span>
+                        </div>
+                        <div class="mb-12"><img src="./assets/images/people.png" alt=""></div>
+                        <p class="subtitle mb-2">臺北現代聯合總監｜Ken Hsu</p>
+                        <p class="subtitle mb-3">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+                        <a class="btn btn-secondary mr-8" href="#" role="button">點此觀看</a>
                     </div>
-                    <div class="img_wrap"><img src="./assets/images/people.png" alt=""></div>
-                    <p class="mb-8">臺北現代聯合總監｜Ken Hsu</p>
-                    <p class="mb-3">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
-                    <a class="btn btn-secondary mr-8" href="#" role="button">點此觀看</a>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="find_more container">
+        <div class="layout-index container swiper">
             <h2 class="fs-2 lh-xl fw-bold mb-4">猜你也喜歡...</h2>
             <div class="row">
-                <div class="col-12 col-md-11 offset-md-1">
-                    <div class="swiper-container mySwiper">
-                        <div class="swiper-wrapper d-flex">
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
-                                    <img src="./assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt=""
-                                        class="card-img-top" alt="card">
+                <div class="col-12 col-md-11 px-0 offset-md-1">
+                    <div class="swiper-container w-100 h-100 mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="col-4 px-0 swiper-slide">
+                                <div class="card border-0">
+                                    <img src="./assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                                        alt="exhibition-1" class="pb-2">
                                     <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
+                            <div class="col-4 px-0 swiper-slide">
+                                <div class="card border-0">
                                     <img src="./assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
-                                        class="card-img-top" alt="card">
+                                        alt="exhibition-2" class="pb-2">
                                     <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
+                            <div class="col-4 px-0 swiper-slide">
+                                <div class="card border-0">
                                     <img src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg"
-                                        class="card-img-top" alt="card">
+                                        alt="exhibition-3" class="pb-2">
                                     <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="swiper-slide">
-                                <div class="card w-100 border-0">
-                                    <img src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg"
-                                        class="card-img-top" alt="card">
+                            <div class="col-4 px-0 swiper-slide">
+                                <div class="card border-0">
+                                    <img src="./assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                                        alt="exhibition-4" class="pb-2">
                                     <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
-                                    <img src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg"
-                                        class="card-img-top" alt="card">
+                            <div class="col-4 px-0 swiper-slide">
+                                <div class="card border-0">
+                                    <img src="./assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+                                        alt="exhibition-5" class="pb-2">
                                     <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
-                                    <img src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg"
-                                        class="card-img-top" alt="card">
-                                    <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</div>
     <footer>
-      <div class="footer">
-        <div class="bg-img h-400 d-flex align-items-end text-white"
-          style="background-image: url(./assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg)">
-          <div class="container subscribe justify-content-sm-start justify-content-center">
-            <h2 class="fs-2 fw-bold lh-xl mb-12">想收到最新消息嗎？ <br>快訂閱我們！</h2>
-            <div class="d-flex">
-              <input type="email" name="email" id="email" placeholder="輸入您的電子信箱" class="rounded-start pl-12">
-              <a class="btn btn-secondary rounded-0 rounded-end" href="#" role="button">訂閱</a>
+        <div class="bg-img h-400 d-flex align-items-end text-white mt-md-9"
+            style="background-image: url(./assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg)">
+            <div class="container footer-subscribe justify-content-sm-start justify-content-center">
+                <h2 class="fs-2 fw-bold lh-xl mb-12">想收到最新消息嗎？ <br>快訂閱我們！</h2>
+                <div class="d-flex">
+                    <input type="email" name="email" id="email" placeholder="輸入您的電子信箱" class="rounded-start pl-12">
+                    <a class="btn btn-secondary rounded-0 rounded-end" href="#" role="button">訂閱</a>
+                </div>
             </div>
-          </div>
         </div>
         <div class="py-5">
-          <div class="container d-flex align-items-center justify-content-between">
-            <div>
-              <ul class="d-flex align-items-md-center align-items-start flex-md-row flex-column">
-                <li class="me-3 fs-4"><a href="index.html" class="text-black">EXHIBINECTION</a></li>
-                <li>© 2020. All Rights Reserved.</li>
-              </ul>
+            <div class="container d-flex align-items-center justify-content-between">
+                <div>
+                    <ul class="d-flex align-items-md-center align-items-start flex-md-row flex-column">
+                        <li class="me-3 fs-4"><a href="index.html" class="text-black">EXHIBINECTION</a></li>
+                        <li>© 2020. All Rights Reserved.</li>
+                    </ul>
+                </div>
+                <div class="d-none d-sm-block">
+                    <ul class="d-flex">
+                        <li class=" me-4 text-dark">
+                            <a href="#" class="lh-sm" tabindex="0" role="button" data-bs-toggle="popover"
+                                data-bs-trigger="focus" title="Dismissible popover" data-bs-content="加入會員搶先第一手消息">Sign
+                                in</a>
+                        </li>
+                        <li class="text-dark"><a href="#" class="lh-sm">Sign up</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="d-none d-sm-block">
-              <ul class="d-flex">
-                <li class="me-4 text-dark"><a href="#" class="lh-sm">Sign in</a></li>
-                <li class="text-dark"><a href="#" class="lh-sm">Sign up</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
     </footer>
+</div>
 
-
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
-    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
     <script src="./assets/js/all.js"></script>
 </body>
 

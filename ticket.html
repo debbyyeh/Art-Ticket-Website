@@ -22,7 +22,7 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
   <!-- swiper -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- icon -->
   <link rel="shortcut icon" href="./assets/images/confirmation_number_black_24dp.svg" type="image/x-icon">
   <!-- css -->
@@ -58,72 +58,77 @@
     </header>
   </div>
   <div class="ticket">
-    <nav>
-        <div class="border-bottom border-dark">
-            <ul class="container menu_list d-flex align-items-center justify-content-center">
-                <li><a href="" class="text-dark">音樂</a></li>
-                <li><a href="" class="text-dark"> 戲劇</a></li>
-                <li><a href="productPage.html" class="text-dark">設計</a></li>
-                <li><a href="" class="text-dark">藝術</a></li>
-                <li><a href="" class="text-dark">美食</a></li>
-                <li><a href="" class="text-dark">旅遊</a></li>
-                <li><a href="" class="text-dark">電影</a></li>
-                <li><a href="" class="text-dark">親子</a></li>
-                <li><a href="" class="text-dark">期間限定</a></li>
+    <nav class="border-bottom border-dark">
+        <div class="container">
+            <ul class="navbar-wrapper justify-content-md-center">
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">音樂</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">戲劇</a></li>
+                <li class="navbar-slide w-20"><a href="productPage.html" class="text-dark">設計</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">藝術</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">美食</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">旅遊</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">電影</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">親子</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">期間限定</a></li>
             </ul>
         </div>
     </nav>
     <section>
-        <div class="container d-flex align-items-center pt-11 pb-7">
+        <div class="container d-flex flex-column flex-md-row align-items-center pt-md-11 pt-44 pb-7">
             <div class="row">
-                <div class="ticket_info col-6 px-0">
-                    <div class=" ticket_pic mb-2">
-                        <img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="ticket_pic">
+                <div class="col-md-6 col-12 px-0">
+                    <div class=" ticket_pic mb-2 h-256">
+                        <img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="ticket_pic"
+                            class="h-100 w-100">
                     </div>
                     <div class="ticket_content">
                         <div class="d-flex align-items-center mb-1">
-                            <h2 class="fw-bold me-2">2020 台味設計展</h2>
+                            <h2 class=" subtitle fw-bold me-2">2020 台味設計展</h2>
                             <a href="#" class="text-black"><i class="fab fa-facebook"></i></a>
                         </div>
-                        <p>一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+                        <p class="mb-md-0 mb-7">
+                            一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+                        </p>
                     </div>
                 </div>
-                <div class="col-6 pe-0">
-                    <div class="row align-items-center h-256">
-                        <div class="col-6">
-                            <div class="d-flex flex-column align-items-center justify-content-center">
-                                <div class="d-flex align-items-center mb-4">
-                                    <a href="#" class="text-black"><span class="material-icons">
-                                            remove
-                                        </span></a>
-                                    <p class="number fw-bold mx-7">01</p>
-                                    <a href="#" class="text-black"><span class="material-icons">
-                                            add
-                                        </span></a>
+                <div class="col-md-6 col-12 pe-0">
+                    <div class="row">
+                        <div class="d-flex flex-column flex-md-row align-items-center h-256 mb-md-0 mb-7">
+                            <div class="col-sm-6 col-12">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <a href="#" class="text-black"><span class="material-icons">
+                                                remove
+                                            </span></a>
+                                        <p class="title-xl fw-bold mx-7">01</p>
+                                        <a href="#" class="text-black"><span class="material-icons">
+                                                add
+                                            </span></a>
+                                    </div>
+                                    <span>張</span>
                                 </div>
-                                <span>張</span>
                             </div>
-                        </div>
-                        <div class="col-6 border-start border-dark">
-                            <div class="text-center">
-                                <p class="ticket_price fw-bold mb-4 pt-6">NT$350</p>
-                                <span class="fw-light">票種</span>
-                            </div>
-                            <div>
-                                <ul class="ticket_select d-flex justify-content-center">
-                                    <li><a href="#" class="text-black p-2">學生</a></li>
-                                    <li><a href="#" class="text-black p-2">全票</a></li>
-                                    <li><a href="#" class="text-black p-2">愛心</a></li>
-                                </ul>
+                            <div class="col-sm-6 col-12 border-md-start border-dark">
+                                <div class="text-center">
+                                    <p class="title-xl fw-bold mb-4 pt-6">NT$350</p>
+                                    <span class="fw-light">票種</span>
+                                </div>
+                                <div>
+                                    <ul class="ticket_select d-flex justify-content-center">
+                                        <li><a href="#" class="text-black p-2">學生</a></li>
+                                        <li><a href="#" class="text-black p-2">全票</a></li>
+                                        <li><a href="#" class="text-black p-2">愛心</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row align-items-center">
-                        <div class="col-6 pt-7">
+                        <div class="col-6 ps-0 pt-7">
                             <a class="btn btn-outline-primary w-100 p-2" href="#" role="button">收藏展覽</a>
                         </div>
-                        <div class="col-6 pt-7">
-                            <a class="btn btn-secondary w-100 p-2" href="ticket.html" role="button">購買票券</a>
+                        <div class="col-6 pe-0 pt-7">
+                            <a class="btn btn-secondary w-100 p-2" href="orderConfirmation.html" role="button">購買票券</a>
                         </div>
                     </div>
                 </div>
@@ -131,19 +136,25 @@
         </div>
     </section>
     <div class="container">
-        <div class="bg-cover">
+        <div class="bg-img h-400 d-none d-md-block"
+            style="background-image: url(./assets/images/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg);">
         </div>
     </div>
     <section>
-        <div class="container d-flex pt-6 pb-9">
-            <div class="row">
-                <div class="salon_pic col-4 px-0">
-                    <img src="./assets/images/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg" alt="salon_pic">
+        <div class="container d-flex pt-md-6 pb-9">
+            <div class="row px-0 d-flex flex-column-reverse flex-md-row">
+                <div class="col-md-4 col-12 px-0 pb-3">
+                    <img src="./assets/images/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg" alt="pic"
+                        class="w-100 h-560">
                 </div>
-                <div class="col-8">
-                    <h2 class="fw-bold mb-1">藝饗宴</h2>
-                    <h2 class="fw-bold mb-2">​Celebration of Style and Art</h2>
-                    <p class="text-dark mb-3 fw-light">
+                <div class="d-md-none col-12 px-0 pb-md-0 pb-4">
+                    <img src="./assets/images/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg" alt="pic"
+                        class="w-100 h-400">
+                </div>
+                <div class="col-md-8 col-12 pb-md-0 pb-20">
+                    <h2 class="subtitle fw-bold mb-1">藝饗宴</h2>
+                    <h2 class="subtitle fw-bold mb-2">​Celebration of Style and Art</h2>
+                    <p class="text-dark mb-md-3 fw-light">
                         匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。
                     </p><br>
                     <p class="text-dark fw-light">從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws
@@ -154,42 +165,38 @@
             </div>
         </div>
     </section>
-</div>
     <footer>
-      <div class="footer">
         <div class="bg-img h-400 d-flex align-items-end text-white"
-          style="background-image: url(./assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg)">
-          <div class="container subscribe justify-content-sm-start justify-content-center">
-            <h2 class="fs-2 fw-bold lh-xl mb-12">想收到最新消息嗎？ <br>快訂閱我們！</h2>
-            <div class="d-flex">
-              <input type="email" name="email" id="email" placeholder="輸入您的電子信箱" class="rounded-start pl-12">
-              <a class="btn btn-secondary rounded-0 rounded-end" href="#" role="button">訂閱</a>
+            style="background-image: url(./assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg)">
+            <div class="container footer-subscribe justify-content-sm-start justify-content-center">
+                <h2 class="fs-2 fw-bold lh-xl mb-12">想收到最新消息嗎？ <br>快訂閱我們！</h2>
+                <div class="d-flex">
+                    <input type="email" name="email" id="email" placeholder="輸入您的電子信箱" class="rounded-start pl-12">
+                    <a class="btn btn-secondary rounded-0 rounded-end" href="#" role="button">訂閱</a>
+                </div>
             </div>
-          </div>
         </div>
         <div class="py-5">
-          <div class="container d-flex align-items-center justify-content-between">
-            <div>
-              <ul class="d-flex align-items-md-center align-items-start flex-md-row flex-column">
-                <li class="me-3 fs-4"><a href="index.html" class="text-black">EXHIBINECTION</a></li>
-                <li>© 2020. All Rights Reserved.</li>
-              </ul>
+            <div class="container d-flex align-items-center justify-content-between">
+                <div>
+                    <ul class="d-flex align-items-md-center align-items-start flex-md-row flex-column">
+                        <li class="me-3 fs-4"><a href="index.html" class="text-black">EXHIBINECTION</a></li>
+                        <li>© 2020. All Rights Reserved.</li>
+                    </ul>
+                </div>
+                <div class="d-none d-sm-block">
+                    <ul class="d-flex">
+                        <li class="me-4 text-dark"><a href="#" class="lh-sm">Sign in</a></li>
+                        <li class="text-dark"><a href="#" class="lh-sm">Sign up</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="d-none d-sm-block">
-              <ul class="d-flex">
-                <li class="me-4 text-dark"><a href="#" class="lh-sm">Sign in</a></li>
-                <li class="text-dark"><a href="#" class="lh-sm">Sign up</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
     </footer>
+</div>
 
-
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
-    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
     <script src="./assets/js/all.js"></script>
 </body>
 
