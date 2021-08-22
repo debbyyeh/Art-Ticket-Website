@@ -1,0 +1,53 @@
+// timeline
+.timeline {
+    // 步驟條
+    &-bar {
+        border-top: 2px solid $secondary;
+    }
+    // 結帳步驟
+    &-step {
+        position: relative;
+        padding-top: 4px;
+    }
+    // 圓點
+    &-point-done {
+        p {
+            @include X-mobile {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        ::before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: $secondary;
+            border: 1px solid $secondary;
+            top: -1%;
+            left: 50%;
+            transform: translate(1%, -50%);
+        }
+    }
+    &-point {
+        p {
+            @include X-mobile {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        ::before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: $white;
+            border: 1px solid $secondary;
+            top: -1%;
+            left: 50%;
+            transform: translate(1%, -50%);
+        }
+    }
+}

@@ -8,15 +8,3 @@
     overflow: hidden;
     white-space: nowrap;
 }
-@mixin layout {
-    margin-bottom: 60px;
-    @include Ipad() {
-        margin-bottom: 40px;
-    }
-    @include X-mobile() {
-        margin-bottom: 24px;
-    }
-    @include mobile() {
-        margin-bottom: 20px;
-    }
-}

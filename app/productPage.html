@@ -5,145 +5,275 @@ engine: ejs
 current: productPage
 ---
 <div class="productPage">
-    <nav>
-        <div class="border border-dark">
-            <ul class="container menu_list d-flex align-items-center justify-content-center">
-                <li><a href="#" class="text-dark">音樂</a></li>
-                <li><a href="#" class="text-dark">戲劇</a></li>
-                <li><a href="productPage.html" class="text-dark">設計</a></li>
-                <li><a href="#" class="text-dark">藝術</a></li>
-                <li><a href="#" class="text-dark">美食</a></li>
-                <li><a href="#" class="text-dark">旅遊</a></li>
-                <li><a href="#" class="text-dark">電影</a></li>
-                <li><a href="#" class="text-dark">親子</a></li>
-                <li><a href="#" class="text-dark">期間限定</a></li>
+    <nav class="border-bottom border-dark d-none d-md-block">
+        <div class="container">
+            <ul class="navbar-wrapper justify-content-md-center">
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">音樂</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">戲劇</a></li>
+                <li class="navbar-slide w-20"><a href="productPage.html" class="text-dark">設計</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">藝術</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">美食</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">旅遊</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">電影</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">親子</a></li>
+                <li class="navbar-slide w-20"><a href="#" class="text-dark">期間限定</a></li>
             </ul>
         </div>
     </nav>
-    <div class="bg-primary text-white product_layout">
+    <div class="bg-primary text-white layout-product">
         <div class="container">
-            <div class="row d-flex product_info">
-                <div class="product_content col-4">
-                    <div class="product_date_Ipad fw-bold mb-2">01 JUN | 31 OCT</div>
-                    <h2 class="fw-bold mb-4">2020 台味設計展</h2>
-                    <p>一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+            <div class="row">
+                <div class="d-flex flex-md-row flex-column flex-column-reverse">
+                    <div class="col-lg-4 col-md-6 col-12 px-0 px-md-5">
+                        <div class="d-lg-none fw-bold mb-2 mt-3">01 JUN | 31 OCT</div>
+                        <h2 class="title fw-bold mb-4">2020 台味設計展</h2>
+                        <p>一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+                    </div>
+                    <div class="product_pic overflow-hidden col-lg-5 col-md-6 col-12">
+                        <a href="ticket.html">
+                            <img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="exhibition1"
+                                class="h-100 w-100 img-scale">
+                        </a>
+                    </div>
+                    <div class="subtitle align-self-end col-lg-1 ps-5 fw-bold d-none d-lg-block">01 <br>JUN <br>|<br>
+                        31<br> OCT
+                    </div>
                 </div>
-                <div class="product_pic col-5 px-0">
-                    <a href="ticket.html">
-                        <img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="exhibition1"
-                            class="h-100 w-100">
-                    </a>
-                </div>
-                <div class="product_date align-self-end col-1 fw-bold">01 <br>JUN <br>|<br> 31<br> OCT</div>
             </div>
         </div>
     </div>
-    <div class="container product_layout text-primary">
-        <div class="product_info row d-flex justify-content-end">
-            <div class="product_content col-4">
-                <div class="product_date_Ipad fw-bold">01 JUN | 31 OCT</div>
-                <h2 class="fw-bold mb-4">No.22 線上設計展</h2>
-                <p>這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
-            </div>
-            <div class="product_pic col-5 px-0">
-                <a href="ticket.html">
-                    <img src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="exhibition2"
-                        class="h-100 w-100">
-                </a>
-            </div>
-            <div class="product_date col-1 fw-bold align-self-end">01 <br>JUN <br>|<br> 31<br> OCT</div>
-        </div>
-    </div>
-    <div class="product_layout bg-primary text-white">
-        <div class="container">
-            <div class="product_info row d-flex">
-                <div class="product_content col-4">
-                    <div class="product_date_Ipad fw-bold">01 JUN | 31 OCT</div>
-                    <h2 class="fw-bold mb-4">高雄設計節</h2>
-                    <p>設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
-                    </p>
+    <div class="container layout-product text-primary">
+        <div class="row">
+            <div class="d-flex justify-content-lg-end flex-md-row flex-column flex-column-reverse">
+                <div class="col-lg-4 col-md-6 col-12 px-0 px-md-5">
+                    <div class="d-lg-none fw-bold mt-3">01 JUN | 31 OCT</div>
+                    <h2 class="title fw-bold mb-4">No.22 線上設計展</h2>
+                    <p>這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
                 </div>
-                <div class="product_pic col-5 px-0">
+                <div class="product_pic overflow-hidden col-lg-5 col-md-6 col-12">
                     <a href="ticket.html">
-                        <img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="exhibition3"
-                            class="h-100 w-100">
+                        <img src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="exhibition2"
+                            class="h-100 w-100 img-scale">
                     </a>
                 </div>
-                <div class="product_date col-1 fw-bold align-self-end">01 <br>JUN <br>|<br> 31<br> OCT</div>
+                <div class="subtitle align-self-end col-lg-1 ps-5 fw-bold d-none d-lg-block">01 <br>JUN <br>|<br> 31<br>
+                    OCT
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layout-product bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-md-row flex-column flex-column-reverse">
+                    <div class="col-lg-4 col-md-6 col-12 px-0 px-md-5">
+                        <div class="fw-bold d-lg-none mt-3">01 JUN | 31 OCT</div>
+                        <h2 class="title fw-bold mb-4">高雄設計節</h2>
+                        <p>設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
+                        </p>
+                    </div>
+                    <div class="product_pic overflow-hidden col-lg-5 col-md-6 col-12">
+                        <a href="ticket.html">
+                            <img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="exhibition3"
+                                class="h-100 w-100 img-scale">
+                        </a>
+                    </div>
+                    <div class="align-self-end subtitle fw-bold col-lg-1 d-none d-lg-block ps-5">01 <br>JUN <br>|<br>
+                        31<br>
+                        OCT
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <section>
-        <div class="find_more container py-9">
-            <h3 class="mb-4 fw-bold">猜你也喜歡...</h3>
+        <div class="layout-product pb-9 container swiper">
+            <h2 class="title fw-bold mb-4">猜你也喜歡...</h2>
             <div class="row">
-                <div class="col-12 col-md-11 offset-md-1">
-                    <div class="swiper-container mySwiper">
-                        <div class="swiper-wrapper d-flex">
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
-                                    <img src="./assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" alt=""
-                                        class="card-img-top" alt="card">
-                                    <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                <div class="col-12 col-md-11 px-0 offset-md-1">
+                    <div class="swiper-container w-100 h-100 mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="col-4 px-0 swiper-slide">
+                                <div class="card border-0">
+                                    <img src="./assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                                        alt="exhibition-1">
+                                    <div class="card-body mt-1 p-0">
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
+                            <div class="col-4 px-0 swiper-slide">
+                                <div class="card border-0">
                                     <img src="./assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
-                                        class="card-img-top" alt="card">
-                                    <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                                        alt="exhibition-2">
+                                    <div class="card-body mt-1 p-0">
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
+                            <div class="col-4 px-0 swiper-slide">
+                                <div class="card border-0">
                                     <img src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg"
-                                        class="card-img-top" alt="card">
-                                    <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                                        alt="exhibition-3">
+                                    <div class="card-body mt-1 p-0">
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="swiper-slide">
-                                <div class="card w-100 border-0">
-                                    <img src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg"
-                                        class="card-img-top" alt="card">
-                                    <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                            <div class="swiper-slide col-4 px-0 d-none d-md-block">
+                                <div class="card border-0">
+                                    <img src="./assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                                        alt="exhibition-4">
+                                    <div class="card-body mt-1 p-0">
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
-                                    <img src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg"
-                                        class="card-img-top" alt="card">
-                                    <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
+                            <div class="swiper-slide col-4 px-0 d-none d-md-block">
+                                <div class="card border-0">
+                                    <img src="./assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+                                        alt="exhibition-5">
+                                    <div class="card-body mt-1 p-0">
+                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="subtitle">$350</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card w-100 border-0">
-                                    <img src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg"
-                                        class="card-img-top" alt="card">
-                                    <div class="card-body p-0">
-                                        <p class="card-text">No.22 線上設計展</p>
-                                        <p>$350</p>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="bg-img h-400 d-flex align-items-end text-white"
+            style="background-image: url(./assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg)">
+            <div class="container footer-subscribe justify-content-sm-start justify-content-center">
+                <h2 class="fs-2 fw-bold lh-xl mb-12">想收到最新消息嗎？ <br>快訂閱我們！</h2>
+                <div class="d-flex">
+                    <input type="email" name="email" id="email" placeholder="輸入您的電子信箱" class="rounded-start pl-12">
+                    <a class="btn btn-secondary rounded-0 rounded-end" href="#" role="button">訂閱</a>
+                </div>
+            </div>
+        </div>
+        <div class="py-5">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div>
+                    <ul class="d-flex align-items-md-center align-items-start flex-md-row flex-column">
+                        <li class="me-3 fs-4"><a href="index.html" class="text-black">EXHIBINECTION</a></li>
+                        <li>© 2020. All Rights Reserved.</li>
+                    </ul>
+                </div>
+                <div class="d-none d-sm-block">
+                    <ul class="d-flex">
+                        <li class="me-4 text-dark">
+                            <a href="#" class="lh-sm" data-bs-toggle="modal" data-bs-target="#signinModal">Sign in</a>
+                        </li>
+                        <li class="text-dark"><a href="#" class="lh-sm">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- signin Modal -->
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <h3 class="modal-title fw-bold title-xl" id="signinModalLabel">Sign In</h3>
+                <button type="button" class="btn-close pt-3 pb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mt-0">
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-blue w-50 text-white p-2 m-3" href="#" role="button">
+                        <i class="fab fa-facebook-f pe-2 subtitle"></i>註冊
+                    </a>
+                    <a class="btn btn-orange w-50 text-white p-2 m-3" href="#" role="button">
+                        <i class="fab fa-google-plus-g pe-2 subtitle"></i>註冊
+                    </a>
+                </div>
+                <div class="mb-4">
+                    <h4 class="subtitle fw-bold mb-3">基本設定</h4>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="name" class="mb-1">姓名</label>
+                        <input type="text" id="name" class="border-light p-2 rounded-2"></input>
+                    </div>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="email" class="mb-1">Email
+                        </label>
+                        <input type="email" id="email" class="border-light p-2  rounded-2"></input>
+                    </div>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="password" class="mb-1">會員密碼
+                        </label>
+                        <input type="password" id="password" class="border-light p-2  rounded-2"></input>
+                        <small class="text-primary small">英數混合不得少於6個字</small>
+                    </div>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="password" class="mb-1">密碼確認
+                        </label>
+                        <input type="password" id="password" class="border-light p-2  rounded-2"></input>
+                    </div>
+                </div>
+                <hr>
+                <div class="modal-input-subscribe mb-4">
+                    <h4 class="subtitle fw-bold mb-2">是否訂閱電子報</h4>
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1" class="ms-2">
+                            是，歡迎傳最新消息給我
+                        </label>
+                    </div>
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            否，暫時不麻煩
+                        </label>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div class="modal-input-content mb-4">
+                    <h4 class="subtitle fw-bold mb-2">興趣類別</h4>
+                    <div class="form-check">
+                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none" type="checkbox"
+                            value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            舞蹈
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none" type="checkbox"
+                            value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            歌舞劇
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none" type="checkbox"
+                            value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            歷史類
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none" type="checkbox"
+                            value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            英文舞台劇
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-top-0">
+                <a class="btn btn-outline-primary" href="ticket.html" role="button">直接購票</a>
+                <a class="btn btn-secondary" href="index.html" role="button" data-bs-dismiss="modal">成為會員</a>
+            </div>
+        </div>
+    </div>
 </div>

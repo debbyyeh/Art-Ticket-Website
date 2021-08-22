@@ -6,12 +6,16 @@
 @import "./setting/base";
 @import "./setting/mixin";
 @import "./setting/grid";
-@import "./setting/utility";
 @import "./setting/helper";
+@import "./setting/utility";
+@import "./setting/componet";
+
+// 元件
+@import "./componet/timeline";
+@import "./componet/swiper";
+@import "./componet/navbar";
 
 @import "./layout/header";
-@import "./layout/footer";
 
-@import "./pages/index.scss";
 @import "./pages/productPage";
 @import "./pages/ticket";

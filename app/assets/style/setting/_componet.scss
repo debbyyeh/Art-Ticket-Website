@@ -1,0 +1,32 @@
+// layout
+.layout {
+    &-index {
+        padding-top: 80px;
+        @include Ipad {
+            padding-top: 60px;
+        }
+        @include X-mobile {
+            padding-top: 20px;
+            padding-bottom: 24px;
+        }
+    }
+    &-product {
+        padding-top: 80px;
+        padding-bottom: 52px;
+        @include Ipad {
+            padding-top: 60px;
+        }
+        @include X-mobile {
+            padding-top: 44px;
+            padding-bottom: 44px;
+        }
+    }
+    &-finish {
+        padding-top: 102px;
+        padding-bottom: 123px;
+        @include X-mobile {
+            padding-top: 42px;
+            padding-bottom: 40px;
+        }
+    }
+}

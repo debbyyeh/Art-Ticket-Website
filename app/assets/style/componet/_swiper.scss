@@ -1,0 +1,18 @@
+// swiper
+.swiper {
+    overflow-x: hidden;
+    &-wrapper {
+        width: 100%;
+    }
+    &-slide {
+        &:hover {
+            opacity: 0.8;
+            cursor: grab;
+        }
+        img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+}

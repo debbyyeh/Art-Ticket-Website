@@ -16,13 +16,11 @@ body {
         display: block;
         object-fit: cover;
     }
-    input[type="button"],
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
+    input {
         -webkit-appearance: none;
         outline: none;
-        border: none;
+        border: 1px solid $light;
+        background-color: transparent;
     }
     .row {
         width: 100%;

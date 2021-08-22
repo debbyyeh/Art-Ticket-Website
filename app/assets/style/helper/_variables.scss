@@ -77,6 +77,8 @@ $light: $gray-400 !default;
 $dark: #707070 !default;
 $white: #fff !default;
 $black: black !default;
+$blue: #3b5998 !default;
+$orange: #dd4b39 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -91,6 +93,8 @@ $theme-colors: (
   "dark": $dark,
   "white": $white,
   "black": $black,
+  "blue": $blue,
+  "orange": $orange,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -343,7 +347,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 1.5rem !default;
+$grid-gutter-width: 1.875rem !default;
 $grid-row-columns: 6 !default;
 
 $gutters: $spacers !default;
@@ -432,6 +436,7 @@ $font-size-lg: $font-size-base * 1.25 !default;
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
 $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 
