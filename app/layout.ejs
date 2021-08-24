@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- icon -->
   <link rel="shortcut icon" href="./assets/images/confirmation_number_black_24dp.svg" type="image/x-icon">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- css -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -35,16 +37,16 @@
       <div
         class="container py-5 d-flex align-items-center justify-content-md-end justify-content-between position-relative">
         <div class="d-md-none dropdown">
-          <a href="#" class="dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i
-              class="fas fa-bars fa-2x"></i></a>
+          <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false"><i class="fas fa-bars fa-2x"></i>
+          </a>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li class="bg-color text-center"><a class="title p-3 text-primary" href="#" data-bs-toggle="modal"
-                data-bs-target="#signinModal">Sign In</a></li>
-            <li class="bg-color text-center"><a class="title p-3 text-primary" href="#" tabindex="0" role="button"
-                data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></li>
+            <li class="bg-color text-center">
+              <a class="title p-3 text-primary dropdown-item" href="#">Sign In</a>
+            </li>
+            <li class="bg-color text-center dropdown-item"><a class="title p-3 text-primary" href="#">Sign Up</a></li>
           </ul>
         </div>
-
         <a href=" index.html">
           <h1 class="text-primary fs-4 link-hover fw-bold position-absolute position-center">EXHIBINECTION
           </h1>
@@ -178,7 +180,7 @@
           <p class="py-2 pe-4">小計</p>
           <p class="py-2">NT$1050</p>
         </div>
-        <a class="btn btn-primary bg-white text-primary" href="orderInfo.html" role="button">前往結帳</a>
+        <a class="btn btn-primary bg-white text-primary" href="orderConfirmation.html" role="button">前往結帳</a>
       </div>
     </div>
   </div>
@@ -354,10 +356,12 @@
   </div>
 
   <%- contents %>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>
