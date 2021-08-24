@@ -21,6 +21,7 @@ body {
         outline: none;
         border: 1px solid $light;
         background-color: transparent;
+        -webkit-appearance: none;
     }
     .row {
         margin-right: 0;
