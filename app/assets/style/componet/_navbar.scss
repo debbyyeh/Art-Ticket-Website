@@ -4,14 +4,12 @@
         flex-wrap: nowrap;
         align-items: center;
         white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-scrollbar {
+            display: none;
+        }
         &:hover {
             cursor: grab;
-        }
-        @include X-mobile {
-            overflow-x: scroll;
-            -webkit-scrollbar {
-                display: none;
-            }
         }
     }
     &-slide {
@@ -19,6 +17,9 @@
         a {
             border-bottom: 2px solid transparent;
             &:hover {
+                border-bottom: 2px solid $secondary;
+            }
+            &.active {
                 border-bottom: 2px solid $secondary;
             }
         }

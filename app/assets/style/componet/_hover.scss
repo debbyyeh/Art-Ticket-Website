@@ -1,0 +1,24 @@
+.img-hover {
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.bg-color-gray {
+    &:hover {
+        background-color: $light;
+    }
+}
+.a-bottomBorder {
+    padding: 14px 18px;
+    a {
+        border-bottom: 2px solid transparent;
+        &:hover {
+            border-bottom: 2px solid $secondary;
+        }
+    }
+}
+.link-hover {
+    &:hover {
+        filter: brightness(50%);
+    }
+}

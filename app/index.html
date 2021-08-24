@@ -58,7 +58,24 @@ current: index
                             </p>
                             <div>
                                 <a class="btn btn-primary me-2" href="ticket.html" role="button">購買票券</a>
-                                <a class="btn btn-outline-primary" href="#" role="button">收藏展覽</a>
+                                <a class="btn btn-outline-primary" href="#" role="button" id="liveToastBtn" role="alert"
+                                    aria-live="assertive" aria-atomic="true">收藏展覽</a>
+                                <!-- 收藏展覽 -->
+                                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive"
+                                        aria-atomic="true">
+                                        <div class="toast-header">
+                                            <img src="..." class="rounded me-2" alt="...">
+                                            <strong class="me-auto">Bootstrap</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="toast-body">
+                                            Hello, world! This is a toast message.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-1 px-0 flex-column justify-content-between d-none d-lg-flex">
@@ -145,12 +162,27 @@ current: index
                         <div class="mb-12"><img src="./assets/images/people.png" alt=""></div>
                         <p class="subtitle mb-2">臺北現代聯合總監｜Ken Hsu</p>
                         <p class="subtitle mb-3">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
-                        <a class="btn btn-secondary mr-8" href="#" role="button">點此觀看</a>
+                        <a class="btn btn-secondary mr-8" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#videoModal">點此觀看</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- video modal -->
+    <div class="modal fade " id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent">
+                <div class="modal-header w-711 h-400">
+                    <iframe width="711" height="400" src="https://www.youtube.com/embed/_oVcNm8d0bQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
     <section>
         <div class="layout-index container swiper">
             <h2 class="fs-2 lh-xl fw-bold mb-4">猜你也喜歡...</h2>
@@ -173,7 +205,7 @@ current: index
                                     <img src="./assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
                                         alt="exhibition-2" class="pb-2">
                                     <div class="card-body p-0">
-                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="fw-bold subtitle mb-1">2020台味展</p>
                                         <p class="subtitle">$350</p>
                                     </div>
                                 </div>
@@ -183,7 +215,7 @@ current: index
                                     <img src="./assets/images/museums-victoria-kiDwVL_5ZBY-unsplash (1).jpg"
                                         alt="exhibition-3" class="pb-2">
                                     <div class="card-body p-0">
-                                        <p class="fw-bold subtitle mb-1">No.22 線上設計展</p>
+                                        <p class="fw-bold subtitle mb-1">高雄設計展</p>
                                         <p class="subtitle">$350</p>
                                     </div>
                                 </div>
@@ -220,7 +252,8 @@ current: index
             <div class="container footer-subscribe justify-content-sm-start justify-content-center">
                 <h2 class="fs-2 fw-bold lh-xl mb-12">想收到最新消息嗎？ <br>快訂閱我們！</h2>
                 <div class="d-flex">
-                    <input type="email" name="email" id="email" placeholder="輸入您的電子信箱" class="rounded-start pl-12">
+                    <input type="email" name="email" id="email" placeholder="輸入您的電子信箱"
+                        class="rounded-start pl-12 bg-white">
                     <a class="btn btn-secondary rounded-0 rounded-end" href="#" role="button">訂閱</a>
                 </div>
             </div>
@@ -236,14 +269,188 @@ current: index
                 <div class="d-none d-sm-block">
                     <ul class="d-flex">
                         <li class=" me-4 text-dark">
-                            <a href="#" class="lh-sm" tabindex="0" role="button" data-bs-toggle="popover"
-                                data-bs-trigger="focus" title="Dismissible popover" data-bs-content="加入會員搶先第一手消息">Sign
+                            <a href="#" class="lh-sm" data-bs-toggle="modal" data-bs-target="#signinModal">Sign
                                 in</a>
                         </li>
-                        <li class="text-dark"><a href="#" class="lh-sm">Sign up</a></li>
+                        <li class="text-dark">
+                            <a href="#" class="lh-sm" tabindex="0" role="button" data-bs-toggle="modal"
+                                data-bs-target="#signupModal">Sign up</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+</div>
+<!-- signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <h3 class="modal-title fw-bold title-xl" id="signupModalLabel">Sign Up</h3>
+                <button type="button" class="btn-close pt-3 pb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mt-0">
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-blue w-50 text-white p-2 m-3" href="#" role="button">
+                        <i class="fab fa-facebook-f pe-2 subtitle"></i>註冊
+                    </a>
+                    <a class="btn btn-orange w-50 text-white p-2 m-3" href="#" role="button">
+                        <i class="fab fa-google-plus-g pe-2 subtitle"></i>註冊
+                    </a>
+                </div>
+                <div class="mb-4">
+                    <h4 class="subtitle fw-bold mb-3">基本設定</h4>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="name" class="mb-1">姓名</label>
+                        <input type="text" id="name" class="border-light p-2 rounded-2"></input>
+                    </div>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="email" class="mb-1">Email
+                        </label>
+                        <input type="email" id="email" class="border-light p-2  rounded-2"></input>
+                    </div>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="password" class="mb-1">會員密碼
+                        </label>
+                        <input type="password" id="password" class="border-light p-2  rounded-2"></input>
+                        <small class="text-primary small">英數混合不得少於6個字</small>
+                    </div>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="password" class="mb-1">密碼確認
+                        </label>
+                        <input type="password" id="password" class="border-light p-2  rounded-2"></input>
+                    </div>
+                </div>
+                <hr>
+                <div class="modal-input-subscribe mb-4">
+                    <h4 class="subtitle fw-bold mb-2">是否訂閱電子報</h4>
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1" class="ms-2">
+                            是，歡迎傳最新消息給我
+                        </label>
+                    </div>
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            否，暫時不麻煩
+                        </label>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div class="modal-input-content mb-4">
+                    <h4 class="subtitle fw-bold mb-2">興趣類別</h4>
+                    <div class="form-check">
+                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none" type="checkbox"
+                            value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            舞蹈
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none" type="checkbox"
+                            value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            歌舞劇
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none" type="checkbox"
+                            value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            歷史類
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none" type="checkbox"
+                            value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            英文舞台劇
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-top-0">
+                <a class="btn btn-outline-primary" href="ticket.html" role="button">直接購票</a>
+                <a class="btn btn-secondary" href="index.html" role="button" data-bs-dismiss="modal">成為會員</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- signin Modal -->
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <h3 class="modal-title fw-bold title-xl" id="signinModalLabel">Sign In</h3>
+                <button type="button" class="btn-close pt-3 pb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mt-0">
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-blue w-50 text-white p-2 m-3" href="#" role="button">
+                        <i class="fab fa-facebook-f pe-2 subtitle"></i>登入
+                    </a>
+                    <a class="btn btn-orange w-50 text-white p-2 m-3" href="#" role="button">
+                        <i class="fab fa-google-plus-g pe-2 subtitle"></i>登入
+                    </a>
+                </div>
+                <div class="mb-4">
+                    <h4 class="subtitle fw-bold mb-3">登入會員</h4>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="name" class="mb-1">姓名</label>
+                        <input type="text" id="name" class="border-light p-2 rounded-2"></input>
+                    </div>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="email" class="mb-1">Email
+                        </label>
+                        <input type="email" id="email" class="border-light p-2  rounded-2"></input>
+                    </div>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="password" class="mb-1">會員密碼
+                        </label>
+                        <input type="password" id="password" class="border-light p-2  rounded-2"></input>
+                        <small class="text-primary small">英數混合不得少於6個字</small>
+                        <a href="#" class="text-secondary small" data-bs-toggle="modal"
+                            data-bs-target="#passwordModal"><small>忘記密碼</small></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-top-0">
+                <a class="btn btn-outline-primary" href="ticket.html" role="button">直接購票</a>
+                <a class="btn btn-secondary" href="index.html" role="button" data-bs-dismiss="modal">完成登入</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- forget password -->
+<div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <h3 class="modal-title fw-bold title-xl" id="passwordModalLabel">重設密碼</h3>
+                <button type="button" class="btn-close pt-3 pb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mt-0">
+                <div class="mb-4">
+                    <h4 class="subtitle fw-bold mb-3">重設密碼</h4>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="password" class="mb-1">新密碼</label>
+                        <input type="password" id="name" class="border-light p-2 rounded-2"></input>
+                        <small class="text-primary small">英數混合不得少於6個字</small>
+                    </div>
+                    <div class="form-group mb-2 d-flex flex-column">
+                        <label for="email" class="mb-1">再次輸入新密碼
+                        </label>
+                        <input type="email" id="email" class="border-light p-2 rounded-2"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-top-0">
+                <a class="btn btn-outline-primary" href="#" role="button" data-bs-dismiss="modal"
+                    aria-label="Close">寄發確認信</a>
+            </div>
+        </div>
+    </div>
 </div>
