@@ -1,6 +1,6 @@
 .img-hover {
     &:hover {
-        opacity: 0.8;
+        filter: brightness(50%);
     }
 }
 .bg-color-gray {
@@ -9,7 +9,6 @@
     }
 }
 .a-bottomBorder {
-    padding: 14px 18px;
     a {
         border-bottom: 2px solid transparent;
         &:hover {
@@ -20,5 +19,44 @@
 .link-hover {
     &:hover {
         filter: brightness(50%);
+    }
+}
+// 手機版照片看更多
+.product {
+    &-cover {
+        position: relative;
+        @include Ipad {
+            &::after {
+                content: "查看更多";
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+    &-swiper {
+        position: relative;
+        @include Ipad {
+            &::after {
+                content: "往右滑查看更多";
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
     }
 }
