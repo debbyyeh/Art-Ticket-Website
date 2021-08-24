@@ -6,3 +6,8 @@
     padding-right: 0;
     padding-left: 0;
 }
+.container-hot {
+    @include Ipad {
+        padding: 0px 15px;
+    }
+}
