@@ -13084,7 +13084,6 @@ body input {
   outline: none;
   border: 1px solid #ced4da;
   background-color: transparent;
-  -webkit-appearance: none;
 }
 
 body .row {
@@ -13152,7 +13151,7 @@ body .row {
 }
 
 .min-height {
-  min-height: 50vh;
+  min-height: 56vh;
 }
 
 .footer-subscribe {
