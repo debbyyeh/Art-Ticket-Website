@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -13141,12 +13142,12 @@ body .row {
   padding-top: 44px;
 }
 
-.pt-90 {
-  padding-top: 90px;
+.w-120 {
+  width: 120px;
 }
 
-.pb-218 {
-  padding-bottom: 218px;
+.h-120 {
+  height: 120px;
 }
 
 .min-height {
@@ -13458,15 +13459,12 @@ body .row {
 }
 
 .img-hover:hover {
-  opacity: 0.8;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .bg-color-gray:hover {
   background-color: #ced4da;
-}
-
-.a-bottomBorder {
-  padding: 14px 18px;
 }
 
 .a-bottomBorder a {
@@ -13482,15 +13480,56 @@ body .row {
           filter: brightness(50%);
 }
 
-.productPage .product_pic::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+.product-cover {
+  position: relative;
 }
 
-.ticket .ticket_select a:hover {
-  border-bottom: 1px solid #e31277;
+@media (max-width: 992px) {
+  .product-cover::after {
+    content: "查看更多";
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.product-swiper {
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .product-swiper::after {
+    content: "往右滑查看更多";
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
