@@ -13434,7 +13434,7 @@ body .row {
 }
 
 .navbar-wrapper -webkit-scrollbar {
-  display: none;
+  display: auto;
 }
 
 .navbar-wrapper:hover {
