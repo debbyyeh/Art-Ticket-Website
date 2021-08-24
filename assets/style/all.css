@@ -13107,6 +13107,12 @@ body .row {
   padding-left: 0;
 }
 
+@media (max-width: 992px) {
+  .container-hot {
+    padding: 0px 15px;
+  }
+}
+
 .mr-18 {
   margin-right: 18px;
 }
