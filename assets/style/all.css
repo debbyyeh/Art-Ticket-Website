@@ -13149,6 +13149,10 @@ body .row {
   padding-bottom: 218px;
 }
 
+.min-height {
+  min-height: 109vh;
+}
+
 .footer-subscribe {
   padding-bottom: 36px;
 }
