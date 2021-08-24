@@ -18,7 +18,4 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
-var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
-  container: 'body'
-});
 //# sourceMappingURL=all.js.map

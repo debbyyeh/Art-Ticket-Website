@@ -13151,7 +13151,7 @@ body .row {
 }
 
 .min-height {
-  min-height: 109vh;
+  min-height: 50vh;
 }
 
 .footer-subscribe {
@@ -13467,11 +13467,11 @@ body .row {
   background-color: #ced4da;
 }
 
-.a-bottomBorder a {
+.a-bottomBorder {
   border-bottom: 2px solid transparent;
 }
 
-.a-bottomBorder a:hover {
+.a-bottomBorder:hover {
   border-bottom: 2px solid #e31277;
 }
 
