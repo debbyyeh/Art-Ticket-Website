@@ -13084,6 +13084,7 @@ body input {
   outline: none;
   border: 1px solid #ced4da;
   background-color: transparent;
+  -webkit-appearance: none;
 }
 
 body .row {
