@@ -4,7 +4,7 @@
 </div>
 
 
-<h3 align="center">Project Name：Art Ticket Website </h3>
+<h3 align="center">Art Ticket Website </h3>
 
 ## Website Intro
 Displaying art-related exhibitions news, the website showed the introduction, performance date and the price information. 
